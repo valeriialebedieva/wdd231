@@ -1,0 +1,33 @@
+#menu {
+    display: none;
+  }
+  
+  nav.navigation {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #222;
+  }
+  
+  nav.navigation a {
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  
+  section {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  footer {
+    margin-top: 2rem;
+  }
+  
