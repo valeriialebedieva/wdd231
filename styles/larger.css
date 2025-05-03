@@ -1,33 +1,28 @@
-#menu {
-    display: none;
+@media (min-width: 700px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .main-cards {
+      flex-direction: row;
+      gap: 2rem;
+    }
+    .card {
+      flex: 1;
+    }
+    .courses-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .course-card {
+      min-width: 180px;
+      flex: 1 1 180px;
+    }
   }
-  
-  nav.navigation {
-    display: flex !important;
-    justify-content: center;
-    flex-direction: row;
-    background-color: #222;
-  }
-  
-  nav.navigation a {
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-  }
-  
-  section {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-  
-  footer {
-    margin-top: 2rem;
-  }
-  

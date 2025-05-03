@@ -1,35 +1,46 @@
 const courses = [
-    { code: "WDD 230", name: "Web Frontend Development", credits: 3, completed: true },
-    { code: "CSE 121b", name: "JavaScript Language", credits: 3, completed: true },
-    { code: "CSE 110", name: "Intro to Programming", credits: 2, completed: false },
-    { code: "WDD 130", name: "Web Basics", credits: 2, completed: true },
-    { code: "CSE 210", name: "Programming with Classes", credits: 3, completed: false }
+    { code: "CSE 110", name: "Introduction to Programming", credits: 2, completed: true, type: "CSE" },
+    { code: "WDD 130", name: "Web Fundamentals", credits: 2, completed: true, type: "WDD" },
+    { code: "CSE 111", name: "Programming with Functions", credits: 2, completed: false, type: "CSE" },
+    { code: "CSE 210", name: "Programming with Classes", credits: 2, completed: false, type: "CSE" },
+    { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, completed: false, type: "WDD" },
+    { code: "WDD 231", name: "Front-end Web Development I", credits: 2, completed: false, type: "WDD" }
   ];
   
-  const container = document.getElementById("courses");
-  const totalEl = document.getElementById("total-credits");
-  
-  function displayCourses(filtered) {
-    container.innerHTML = "";
-    let total = 0;
+  function renderCourses(filter = "All") {
+    const container = document.getElementById('courses');
+    container.innerHTML = '';
+    let filtered = courses;
+    if (filter === "CSE") filtered = courses.filter(c => c.type === "CSE");
+    if (filter === "WDD") filtered = courses.filter(c => c.type === "WDD");
+    let totalCredits = 0;
     filtered.forEach(course => {
-      const card = document.createElement("div");
-      card.className = "course-card";
-      card.style.borderLeft = course.completed ? "5px solid green" : "5px solid red";
-      card.innerHTML = `
-        <h3>${course.code}</h3>
-        <p>${course.name}</p>
-        <p>Credits: ${course.credits}</p>
-      `;
-      container.appendChild(card);
-      total += course.credits;
+      totalCredits += course.credits;
+      const div = document.createElement('div');
+      div.className = 'course-card' + (course.completed ? ' completed' : '');
+      div.textContent = `${course.code}`;
+      container.appendChild(div);
     });
-    totalEl.textContent = `Total Credits: ${total}`;
+    document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
   }
   
-  document.getElementById("all").addEventListener("click", () => displayCourses(courses));
-  document.getElementById("wdd").addEventListener("click", () => displayCourses(courses.filter(c => c.code.startsWith("WDD"))));
-  document.getElementById("cse").addEventListener("click", () => displayCourses(courses.filter(c => c.code.startsWith("CSE"))));
+  document.addEventListener('DOMContentLoaded', () => {
+    renderCourses();
+    document.getElementById('allBtn').addEventListener('click', function() {
+      setActive(this);
+      renderCourses("All");
+    });
+    document.getElementById('cseBtn').addEventListener('click', function() {
+      setActive(this);
+      renderCourses("CSE");
+    });
+    document.getElementById('wddBtn').addEventListener('click', function() {
+      setActive(this);
+      renderCourses("WDD");
+    });
+  });
   
-  displayCourses(courses);
-  
+  function setActive(btn) {
+    document.querySelectorAll('.course-filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
