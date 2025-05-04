@@ -1,28 +1,165 @@
 @media (min-width: 700px) {
+    header {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-center {
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    #menu {
+      display: none;
+    }
     nav ul {
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
+      display: flex !important;
+      background: #000;
+    }
+    nav ul li {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    nav ul li a {
+      background: #000;
+      color: #fff;
+      border: none;
+      font-weight: 500;
+      transition: none;
+      text-decoration: none;
+      padding: 1rem 2rem;
+    }
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+      background: #000;
+      color: #fff;
+    }
+    nav ul li a:hover {
+      background: #222;
+      color: #fff;
     }
     main {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 2rem;
     }
     .main-cards {
       flex-direction: row;
       gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .card {
-      flex: 1;
+      flex: 1 1 0;
+      min-width: 0;
+      box-shadow: 0 2px 12px 2px #0002;
+    }
+    .coursework-card h2,
+    .location-card h2,
+    .certificate-section h2 {
+      background: #345678;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+      margin: -1rem -1rem 1rem -1rem;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    .location-card figcaption {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    .certificate-section {
+      max-width: 875px;
+      margin: 2rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      box-shadow: 0 2px 12px 2px #0002;
+    }
+    .course-filters {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      width: 100%;
+    }
+    .course-filters button {
+      background: #000 !important;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      flex: 0 0 110px;
+      max-width: 110px;
+      min-width: 80px;
+      width: 110px;
+      padding: 0.5rem 0;
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      transition: background 0.2s;
+    }
+    .course-filters button.active {
+      background: #222 !important;
+      color: #fff;
+      text-decoration: underline;
     }
     .courses-grid {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem 2.5rem;
       justify-content: center;
+      padding: 1.5rem 2rem 1.5rem 2rem;
+      width: 100%;
+      box-sizing: border-box;
+      background: #f7fafd;
+      border-radius: 0 0 12px 12px;
     }
     .course-card {
-      min-width: 180px;
-      flex: 1 1 180px;
+      width: 180px;
+      min-width: 200px;
+      max-width: 200px;
+      box-sizing: border-box;
+      font-size: 1.1rem;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px 0 #0001;
+      font-weight: bold;
+      letter-spacing: 1px;
+      background: hsl(36, 98%, 49%);
+      color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+    }
+    .course-card.completed {
+      background: #e0e0e0;
+      color: #222;
+      border: 2px solid #345678;
+    }
+    .location-card img {
+      max-width: 250px;
+      height: 250px;
+    }
+    #total-credits {
+      padding-left: 2rem;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 500;
     }
   }

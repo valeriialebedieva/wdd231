@@ -16,9 +16,11 @@
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Valeriia Lebedieva photo" width="60" height="60">
-    <span>Valeriia Lebedieva</span>
-    <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+    <div class="header-center">
+      <img src="images/profile.jpg" alt="Valeriia Lebedieva photo" width="60" height="60">
+      <span>Valeriia Lebedieva</span>
+      <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+    </div>
   </header>
   <nav>
     <ul id="nav-list">
@@ -31,29 +33,31 @@
   </nav>
   <main>
     <h1>Home</h1>
-    <section>
-      <h2>Course Work</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Stockholm, Sweden</h2>
-      <figure>
-        <img src="images/architecture.jpg" alt="Stockholm" width="250" height="250">
-        <figcaption>Stockholm</figcaption>
-      </figure>
-    </section>
-    <section>
+    <div class="main-cards">
+      <section class="card coursework-card">
+        <h2>Course Work</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+      <section class="card location-card">
+        <h2>Stockholm, Sweden</h2>
+        <figure>
+          <img src="images/architecture.jpg" alt="Stockholm cityscape with historic buildings" width="250" height="250">
+          <figcaption>Stockholm</figcaption>
+        </figure>
+      </section>
+    </div>
+    <section class="certificate-section">
       <h2>Web and Computer Programming Certificate</h2>
       <div class="course-filters">
         <button id="allBtn" class="active">All</button>
         <button id="cseBtn">CSE</button>
         <button id="wddBtn">WDD</button>
       </div>
-      <div id="courses"></div>
+      <div id="courses" class="courses-grid"></div>
       <div id="total-credits"></div>
     </section>
   </main>

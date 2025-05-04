@@ -19,9 +19,12 @@ const courses = [
       const div = document.createElement('div');
       div.className = 'course-card' + (course.completed ? ' completed' : '');
       div.textContent = `${course.code}`;
+      div.setAttribute('role', 'listitem');
       container.appendChild(div);
     });
     document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
+    container.setAttribute('role', 'list');
+    container.classList.add('courses-grid');
   }
   
   document.addEventListener('DOMContentLoaded', () => {
