@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Nordic Tech Solutions",
+    "address": "123 Innovation St, Stockholm, Sweden",
+    "phone": "+46 8 123 4567",
+    "url": "https://nordictech.se",
+    "image": "nordictech.png",
+    "membership": 3,
+    "description": "Leading provider of IT solutions for businesses."
+  },
+  {
+    "name": "Baltic Fitness Center",
+    "address": "12 Wellness Blvd, Stockholm, Sweden",
+    "phone": "+46 8 567 8901",
+    "url": "https://balticfitness.se",
+    "image": "fitness.jpg",
+    "membership": 1,
+    "description": "Modern gym and wellness center."
+  },
+  {
+    "name": "Stockholm Coffee Roasters",
+    "address": "45 Bean Ave, Stockholm, Sweden",
+    "phone": "+46 8 234 5678",
+    "url": "https://stockholmcoffee.se",
+    "image": "coffee.png",
+    "membership": 2,
+    "description": "Artisan coffee roasting and café supplies."
+  },
+  {
+    "name": "Svea Consulting Group",
+    "address": "9 Business Park, Stockholm, Sweden",
+    "phone": "+46 8 345 6789",
+    "url": "https://sveaconsulting.se",
+    "image": "svea.png",
+    "membership": 1,
+    "description": "Business and management consulting services."
+  },
+  {
+    "name": "Green City Florists",
+    "address": "77 Blossom Rd, Stockholm, Sweden",
+    "phone": "+46 8 456 7890",
+    "url": "https://greencityflorists.se",
+    "image": "florist.png",
+    "membership": 2,
+    "description": "Eco-friendly floral arrangements and delivery."
+  },
+  {
+    "name": "Baltic Fitness Center",
+    "address": "12 Wellness Blvd, Stockholm, Sweden",
+    "phone": "+46 8 567 8901",
+    "url": "https://balticfitness.se",
+    "image": "fitness.webp",
+    "membership": 1,
+    "description": "Modern gym and wellness center."
+  },
+  {
+    "name": "Vasa Bookstore",
+    "address": "101 Library Lane, Stockholm, Sweden",
+    "phone": "+46 8 678 9012",
+    "url": "https://vasabooks.se",
+    "image": "bookstore.jpg",
+    "membership": 1,
+    "description": "Independent bookstore and community events."
+  },
+  {
+    "name": "Arctic Web Design",
+    "address": "88 Digital Dr, Stockholm, Sweden",
+    "phone": "+46 8 789 0123",
+    "url": "https://arcticweb.se",
+    "image": "arcticweb.jpg",
+    "membership": 3,
+    "description": "Creative web design and branding agency."
+  }
+] 

@@ -1,0 +1,89 @@
+@media (max-width: 700px) {
+  header .logo-title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+  .hero-img {
+    max-height: 180px;
+    border-radius: 0;
+  }
+  .hero-btn {
+    width: auto;
+    left: auto;
+    right: 1rem;
+    bottom: 1rem;
+    top: auto;
+    transform: none;
+    position: absolute;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    z-index: 2;
+  }
+  .info-row {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .info-col {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .info-col h2 {
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+    margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+  }
+  .weather-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .view-toggle {
+    display: none;
+  }
+  .directory {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .member-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .member-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  footer address {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .social {
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  .social a {
+    font-size: 2rem;
+    margin: 0 0.3rem 0 0;
+    display: inline-block;
+  }
+  .dev-info {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+} 

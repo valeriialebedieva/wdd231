@@ -1,0 +1,269 @@
+/* Main Styles for Stockholm Chamber of Commerce */
+
+:root {
+  --primary: #1a4d7a;
+  --secondary: #e3eaf2;
+  --accent: #f9b233;
+  --text: #222;
+  --background: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--secondary);
+  color: var(--text);
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--background);
+  border-bottom: 1px solid #ccc;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+  display: block;
+}
+nav a.active, nav a:hover {
+  color: var(--accent);
+}
+
+/* Responsive Nav */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-left: auto;
+  margin-right: 1rem;
+}
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: var(--background);
+  }
+  nav ul.open {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: var(--background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Directory Grid & List */
+.view-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.view-toggle button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.view-toggle button.active {
+  background: var(--accent);
+  color: var(--primary);
+}
+.directory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.directory.list {
+  display: block;
+}
+.member-card {
+  background: var(--secondary);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.member-card.gold {
+  border: 2px solid gold;
+}
+.member-card.silver {
+  border: 2px solid #b0b0b0;
+}
+.member-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.member-card .member-info {
+  margin-bottom: 0.5rem;
+}
+.member-card .member-level {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  margin-top: 2rem;
+}
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer address {
+  font-style: normal;
+  line-height: 1.6;
+}
+footer .dev-info {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+footer .social {
+  margin-top: 1rem;
+}
+footer .social a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  main, footer .footer-content {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .directory {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.hero-btn {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  background: var(--secondary);
+  color: var(--primary);
+  border: 3px solid;
+  border-color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px var(--secondary);
+}
+@media (max-width: 700px) {
+  .hero-btn {
+    position: static;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+}
+
+/* Info Row (Events, Weather, Forecast) */
+.info-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.info-col {
+  background: var(--secondary);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 0;
+  padding: 1rem;
+  min-width: 0;
+}
+.info-col h2 {
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.1rem;
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px 6px 0 0;
+}
+.weather-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 900px) {
+  .info-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .info-col h2 {
+    margin: -1rem -1rem 0.5rem -1rem;
+  }
+} 
