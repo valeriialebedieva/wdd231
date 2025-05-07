@@ -260,6 +260,19 @@ footer .social a {
   color: var(--primary);
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
+} 
+
+.logo-title-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
 .weather-icon {
   width: 40px;
   height: auto;
