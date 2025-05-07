@@ -221,7 +221,7 @@ footer .social a {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px var(--secondary);
+  box-shadow: 2px 2px 5px var(--secondary);
 }
 @media (max-width: 700px) {
   .hero-btn {
