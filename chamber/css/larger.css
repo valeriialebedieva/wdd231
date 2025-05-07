@@ -1,0 +1,12 @@
+.main-title, h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;
+  color: var(--primary);
+}
+
+.weather-icon {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+} 

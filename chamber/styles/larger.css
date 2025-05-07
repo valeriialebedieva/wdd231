@@ -1,5 +1,3 @@
-/* Main Styles for Stockholm Chamber of Commerce */
-
 :root {
   --primary: #1a4d7a;
   --secondary: #e3eaf2;
@@ -57,7 +55,6 @@ nav a.active, nav a:hover {
   color: var(--accent);
 }
 
-/* Responsive Nav */
 .menu-toggle {
   display: none;
   background: none;
@@ -91,7 +88,6 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Directory Grid & List */
 .view-toggle {
   text-align: right;
   margin-bottom: 1rem;
@@ -195,7 +191,6 @@ footer .social a {
   }
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   margin-bottom: 2rem;
@@ -231,7 +226,6 @@ footer .social a {
   }
 }
 
-/* Info Row (Events, Weather, Forecast) */
 .info-row {
   display: flex;
   gap: 1.5rem;
@@ -258,6 +252,19 @@ footer .social a {
   align-items: center;
   gap: 1rem;
 }
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;
+  color: var(--primary);
+}
+
+.weather-icon {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+} 
 @media (max-width: 900px) {
   .info-row {
     flex-direction: column;
