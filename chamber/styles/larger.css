@@ -287,3 +287,9 @@ footer .social a {
     margin: -1rem -1rem 0.5rem -1rem;
   }
 } 
+
+@media (min-width: 701px) {
+  .directory.list .member-card img {
+    display: none;
+  }
+} 

@@ -24,4 +24,13 @@
   margin-left: 0.5rem;
   vertical-align: middle;
   display: inline-block;
+}
+
+@media (min-width: 701px) {
+  .directory.list .member-card img {
+    display: none;
+  }
+  .directory.grid .member-card img {
+    display: block;
+  }
 } 
