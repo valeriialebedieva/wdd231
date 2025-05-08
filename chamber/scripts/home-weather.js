@@ -16,11 +16,11 @@ async function getCurrentWeather() {
         }
         
         const data = await response.json();
-        // Remove Fahrenheit, use Celsius only
+        
         const tempC = Math.round(data.main.temp);
         const highC = Math.round(data.main.temp_max);
         const lowC = Math.round(data.main.temp_min);
-        // Format sunrise/sunset
+       
         const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         currentWeatherContent.innerHTML = `
