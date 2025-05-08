@@ -16,17 +16,26 @@ async function getCurrentWeather() {
         }
         
         const data = await response.json();
-        
+        // Convert Celsius to Fahrenheit
+        const tempF = Math.round((data.main.temp * 9/5) + 32);
+        const highF = Math.round((data.main.temp_max * 9/5) + 32);
+        const lowF = Math.round((data.main.temp_min * 9/5) + 32);
+        // Format sunrise/sunset
+        const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         currentWeatherContent.innerHTML = `
             <div style="display: flex; align-items: center; gap: 0.7em;">
                 <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" 
                      alt="${data.weather[0].description}" 
                      style="width: 48px; height: 48px;">
                 <div>
-                    <strong>${Math.round(data.main.temp)}°C</strong><br>
-                    ${data.weather[0].description}<br>
+                    <strong>${tempF}°F</strong><br>
+                    ${data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)}<br>
+                    High: ${highF}°<br>
+                    Low: ${lowF}°<br>
                     Humidity: ${data.main.humidity}%<br>
-                    Wind: ${Math.round(data.wind.speed)} m/s
+                    Sunrise: ${sunrise}<br>
+                    Sunset: ${sunset}
                 </div>
             </div>
         `;
