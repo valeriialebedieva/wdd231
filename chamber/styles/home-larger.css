@@ -315,7 +315,7 @@
 }
 
 .info-col h2 {
-    background: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 80%, #236093 100%);
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
@@ -323,12 +323,18 @@
     width: 100%;
     margin: 0;
     padding: 0.6rem 0 0.5rem 0;
-    border-radius: 0;
+    border-radius: 12px 12px 0 0;
     border: none;
-    box-shadow: none;
+    box-shadow: 0 4px 16px 0 rgba(26, 77, 122, 0.10);
     text-align: center;
     letter-spacing: 0.01em;
     box-sizing: border-box;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+.info-col h2:hover {
+    box-shadow: 0 8px 24px 0 rgba(26, 77, 122, 0.18);
+    background: linear-gradient(90deg, #236093 60%, var(--primary) 100%);
 }
 
 .info-body {
