@@ -16,10 +16,10 @@ async function getCurrentWeather() {
         }
         
         const data = await response.json();
-        // Convert Celsius to Fahrenheit
-        const tempF = Math.round((data.main.temp * 9/5) + 32);
-        const highF = Math.round((data.main.temp_max * 9/5) + 32);
-        const lowF = Math.round((data.main.temp_min * 9/5) + 32);
+        // Remove Fahrenheit, use Celsius only
+        const tempC = Math.round(data.main.temp);
+        const highC = Math.round(data.main.temp_max);
+        const lowC = Math.round(data.main.temp_min);
         // Format sunrise/sunset
         const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -29,10 +29,10 @@ async function getCurrentWeather() {
                      alt="${data.weather[0].description}" 
                      style="width: 48px; height: 48px;">
                 <div>
-                    <strong>${tempF}°F</strong><br>
+                    <strong>${tempC}°C</strong><br>
                     ${data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)}<br>
-                    High: ${highF}°<br>
-                    Low: ${lowF}°<br>
+                    High: ${highC}°<br>
+                    Low: ${lowC}°<br>
                     Humidity: ${data.main.humidity}%<br>
                     Sunrise: ${sunrise}<br>
                     Sunset: ${sunset}
@@ -68,7 +68,7 @@ async function getForecast() {
         const forecastHTML = dailyForecasts.map(forecast => {
             const date = new Date(forecast.dt * 1000);
             return `
-                <li>${date.toLocaleDateString('en-US', { weekday: 'short' })}: <strong>${Math.round(forecast.main.temp)}°C</strong> ${forecast.weather[0].description}</li>
+                <li>${date.toLocaleDateString('en-US', { weekday: 'long' })}: <strong>${Math.round(forecast.main.temp)}°C</strong></li>
             `;
         }).join('');
         
