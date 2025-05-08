@@ -4,7 +4,7 @@
     "address": "123 Innovation St, Stockholm, Sweden",
     "phone": "+46 8 123 4567",
     "url": "https://nordictech.se",
-    "image": "nordictech.png",
+    "image": "nordic.png",
     "membership": 3,
     "description": "Leading provider of IT solutions for businesses."
   },
@@ -22,7 +22,7 @@
     "address": "45 Bean Ave, Stockholm, Sweden",
     "phone": "+46 8 234 5678",
     "url": "https://stockholmcoffee.se",
-    "image": "coffee.png",
+    "image": "coffee.webp",
     "membership": 2,
     "description": "Artisan coffee roasting and café supplies."
   },

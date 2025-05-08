@@ -1,0 +1,376 @@
+:root {
+  --primary: #1a4d7a;
+  --secondary: #e3eaf2;
+  --accent: #f9b233;
+  --text: #222;
+  --background: #fff;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--background);
+    background-color: rgba(26, 77, 122, 0.8); 
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.current-events {
+    padding: 2rem;
+    background-color: var(--secondary);
+}
+
+.current-events h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.weather-section {
+    padding: 2rem;
+    background-color: var(--background);
+}
+
+.weather-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.current-weather, .forecast {
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-details {
+    flex: 1;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.weather-details p {
+    margin: 0.25rem 0;
+    color: var(--text);
+}
+
+
+.forecast-day {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--background);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day:last-child {
+    margin-bottom: 0;
+}
+
+.forecast-date {
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.forecast-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0.5rem 0;
+}
+
+.forecast-temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+    margin: 0.5rem 0;
+}
+
+.forecast-desc {
+    text-transform: capitalize;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.weather-error, .forecast-error {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text);
+}
+
+.error-details {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+.spotlights {
+    padding: 2rem;
+    background-color: var(--secondary);
+}
+
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.spotlight-card {
+    background-color: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.spotlight-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.membership-level {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.member-contact {
+    margin-top: 1rem;
+    text-align: left;
+    color: var(--text);
+}
+
+.member-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.member-contact a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.member-contact a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.info-col {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.info-header {
+    background: var(--primary);
+    color: var(--background);
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    border-radius: 6px 6px 0 0;
+    letter-spacing: 0.5px;
+}
+
+.info-body {
+    padding: 1rem 1.2rem 1.2rem 1.2rem;
+    color: var(--text);
+    font-size: 1rem;
+    text-align: left;
+    min-height: 140px;
+    display: block;
+}
+
+.events-content ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.events-content li {
+    margin-bottom: 0.7em;
+}
+
+.weather-content,
+.forecast-content {
+    padding: 0;
+}
+
+.weather-content .temperature {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.weather-content .description {
+    text-transform: capitalize;
+    margin-bottom: 0.2em;
+}
+
+.forecast-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-list li {
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+
+.forecast-list li strong {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .info-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .forecast-day {
+        max-width: 100%;
+    }
+}
+
+.main-title {
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+} 

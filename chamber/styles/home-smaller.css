@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .events-grid,
+    .weather-container,
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .weather-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .spotlight-card {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+} 
