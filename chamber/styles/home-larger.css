@@ -25,22 +25,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--background);
-    background-color: rgba(26, 77, 122, 0.8); 
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 600px;
+    color: #fff;
+    background: rgba(26, 77, 122, 0.8);
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+    max-width: 700px;
     width: 90%;
+    border: 1.5px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    opacity: 0.95;
 }
 
 .cta-button {
@@ -282,24 +291,44 @@
 }
 
 .info-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+    display: flex;
+    gap: 2.2rem;
+    margin-bottom: 2.5rem;
     margin-top: 0;
-    margin-bottom: 2rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 .info-col {
+    background: var(--secondary);
+    border: 2px solid #b5c7d3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(26, 77, 122, 0.08);
+    padding: 0 0 1.2rem 0;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 260px;
+    margin-bottom: 0;
+    margin-top: 1.2rem;
+    position: relative;
+    padding-top: 0;
 }
 
 .info-col h2 {
-    margin-bottom: 1rem;
-    margin-top: 0;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.6rem 0 0.5rem 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
 }
 
 .info-body {
@@ -353,8 +382,13 @@
 
 @media screen and (max-width: 900px) {
     .info-row {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .info-col h2 {
+        margin: -2.7rem 0 0.7rem 1.2rem;
+        font-size: 1.1rem;
+        padding: 0.6rem 1.5rem 0.6rem 1.2rem;
     }
     .forecast-day {
         max-width: 100%;
