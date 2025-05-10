@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stockholm Chamber of Commerce Directory - Find local businesses, events, and resources in Stockholm.">
-    <meta name="author" content="Valeriia Lebedieva">
-    <title>Stockholm Chamber of Commerce Directory</title>
+    <meta name="description" content="Thank you for joining the Stockholm Chamber of Commerce.">
+    <title>Thank You | Stockholm Chamber of Commerce</title>
     <link rel="icon" href="images/flag.svg" type="image/x-icon">
-    <meta property="og:title" content="Stockholm Chamber of Commerce Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://valeriialebedieva.github.io/wdd231/chamber/images/flag.svg">
-    <meta property="og:url" content="https://valeriialebedieva.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/join.css">
 </head>
 <body>
     <header>
@@ -25,7 +21,7 @@
     <nav>
         <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="directory.html">Business Directory</a></li>
             <li><a href="join.html">Join</a></li>
@@ -35,46 +31,18 @@
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <img src="images/stockholm.jpg" alt="Scalable, responsive hero image" class="hero-img">
-            <button class="hero-btn">Keynote Tickets</button>
-        </section>
-        <h1 class="main-title">Home</h1>
-        <section class="info-row">
-            <div class="info-col events">
-                <h2>Events</h2>
-                <div class="events-content">Upcoming events will be listed here.</div>
+        <section class="thankyou-section">
+            <h1>Thank You for Joining!</h1>
+            <p class="thankyou-message">We appreciate your interest in the Stockholm Chamber of Commerce. Here is the information you submitted:</p>
+            <div class="thankyou-info">
+                <div><strong>First Name:</strong> <span id="firstName"></span></div>
+                <div><strong>Last Name:</strong> <span id="lastName"></span></div>
+                <div><strong>Email:</strong> <span id="email"></span></div>
+                <div><strong>Mobile:</strong> <span id="mobile"></span></div>
+                <div><strong>Business/Organization Name:</strong> <span id="organization"></span></div>
+                <div><strong>Submitted At:</strong> <span id="timestamp"></span></div>
             </div>
-            <div class="info-col weather">
-                <h2>Current Weather</h2>
-                <div class="weather-content">
-                    <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
-                    <div>
-                        <strong>75°F</strong><br>
-                        Partly Cloudy<br>
-                        High: 85°<br>
-                        Low: 52°<br>
-                        Humidity: 34%<br>
-                        Sunrise: 7:30am<br>
-                        Sunset: 9:59pm
-                    </div>
-                </div>
-            </div>
-            <div class="info-col forecast">
-                <h2>Weather Forecast</h2>
-                <div class="forecast-content">
-                    Today: <strong>90°F</strong><br>
-                    Wednesday: <strong>89°F</strong><br>
-                    Thursday: <strong>68°F</strong>
-                </div>
-            </div>
-        </section>
-        <section class="view-toggle">
-            <label for="gridBtn">View:</label>
-            <button id="gridBtn" class="active" aria-label="Grid view">Grid</button>
-            <button id="listBtn" aria-label="List view">List</button>
-        </section>
-        <section class="directory grid">
+            <a href="index.html" class="cta-button" style="margin-top:2rem;">Return Home</a>
         </section>
     </main>
     <footer>
@@ -104,5 +72,6 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/thankyou.js"></script>
 </body>
 </html> 

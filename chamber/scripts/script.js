@@ -54,3 +54,13 @@ const yearSpan = document.getElementById('currentYear');
 const lastModSpan = document.getElementById('lastModified');
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 if (lastModSpan) lastModSpan.textContent = document.lastModified; 
+
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('.join-form');
+  var ts = document.getElementById('timestamp');
+  if (form && ts) {
+      form.addEventListener('submit', function() {
+          ts.value = new Date().toISOString();
+      });
+  }
+});
