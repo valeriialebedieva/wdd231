@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Apply to join the Stockholm Chamber of Commerce.">
+    <meta name="author" content="Valeriia Lebedieva">
     <title>Join the Chamber | Stockholm Chamber of Commerce</title>
     <link rel="icon" href="images/flag.svg" type="image/x-icon">
+    <meta property="og:title" content="Join the Chamber | Stockholm Chamber of Commerce">
+    <meta property="og:description" content="Apply to become a member of the Stockholm Chamber of Commerce and gain access to exclusive events, networking, and business growth opportunities.">
+    <meta property="og:image" content="https://valeriialebedieva.github.io/wdd231/chamber/images/flag.svg">
+    <meta property="og:url" content="https://valeriialebedieva.github.io/chamber/join.html">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/smaller.css">
@@ -31,6 +37,7 @@
         </ul>
     </nav>
     <main>
+        <h1 class="main-title">JOIN THE CHAMBER</h1>
         <div class="join-container">
             <form class="join-form" method="get" action="thankyou.html" autocomplete="on">
                 <h5 class="main-title">Membership Application</h5>
@@ -61,6 +68,7 @@
                 <label>
                     Membership Level
                     <select name="membership" title="Membership Level" required>
+                        <option value="" disabled selected>Select a Membership Level</option>
                         <option value="np">NP Membership (Non-Profit, Free)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
