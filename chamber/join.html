@@ -51,7 +51,9 @@
                 </label>
                 <label>
                     Organizational Title
-                    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" placeholder="e.g. Marketing Lead" >
+                    <input type="text" name="orgTitle" title="Minimum 7 characters. Letters, hyphens, and spaces only." 
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" 
+                    placeholder="e.g. Marketing Lead" required>
                 </label>
                 <label>
                     Email

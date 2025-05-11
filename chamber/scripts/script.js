@@ -64,3 +64,16 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+document.querySelector('.join-form').addEventListener('submit', function (e) {
+  const titleField = this.querySelector('input[name="orgTitle"]');
+  const pattern = /^[A-Za-z\s\-]{7,}$/;
+
+  if (!pattern.test(titleField.value)) {
+      e.preventDefault();
+      titleField.setCustomValidity("Organizational title must be at least 7 characters long and contain only letters, hyphens, and spaces.");
+      titleField.reportValidity();
+  } else {
+      titleField.setCustomValidity(""); 
+  }
+});
