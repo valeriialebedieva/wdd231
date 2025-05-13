@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stockholm Chamber of Commerce Directory - Find local businesses, events, and resources in Stockholm.">
+    <meta name="description" content="Discover Stockholm: Explore the best features, attractions, and demographics of our vibrant area.">
     <meta name="author" content="Valeriia Lebedieva">
-    <title>Stockholm Chamber of Commerce Directory</title>
+    <title>Discover | Stockholm Chamber of Commerce</title>
     <link rel="icon" href="images/flag.svg" type="image/x-icon">
-    <meta property="og:title" content="Stockholm Chamber of Commerce Directory">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discover | Stockholm Chamber of Commerce">
     <meta property="og:image" content="https://valeriialebedieva.github.io/wdd231/chamber/images/flag.svg">
-    <meta property="og:url" content="https://valeriialebedieva.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://valeriialebedieva.github.io/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover the best of Stockholm: attractions, features, and area highlights.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/discover.css">
 </head>
 <body>
     <header>
@@ -25,8 +27,8 @@
     <nav>
         <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
             <li><a href="directory.html">Business Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="#">About</a></li>
@@ -34,47 +36,12 @@
             <li><a href="#">Events</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="hero">
-            <img src="images/stockholm.jpg" alt="Scalable, responsive hero image" class="hero-img">
-            <button class="hero-btn">Keynote Tickets</button>
-        </section>
-        <h1 class="main-title">Home</h1>
-        <section class="info-row">
-            <div class="info-col events">
-                <h2>Events</h2>
-                <div class="events-content">Upcoming events will be listed here.</div>
-            </div>
-            <div class="info-col weather">
-                <h2>Current Weather</h2>
-                <div class="weather-content">
-                    <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
-                    <div>
-                        <strong>75°F</strong><br>
-                        Partly Cloudy<br>
-                        High: 85°<br>
-                        Low: 52°<br>
-                        Humidity: 34%<br>
-                        Sunrise: 7:30am<br>
-                        Sunset: 9:59pm
-                    </div>
-                </div>
-            </div>
-            <div class="info-col forecast">
-                <h2>Weather Forecast</h2>
-                <div class="forecast-content">
-                    Today: <strong>90°F</strong><br>
-                    Wednesday: <strong>89°F</strong><br>
-                    Thursday: <strong>68°F</strong>
-                </div>
-            </div>
-        </section>
-        <section class="view-toggle">
-            <label for="gridBtn">View:</label>
-            <button id="gridBtn" class="active" aria-label="Grid view">Grid</button>
-            <button id="listBtn" aria-label="List view">List</button>
-        </section>
-        <section class="directory grid">
+    <main class="discover-main">
+        <aside class="sidebar" id="visit-message">
+            <!-- Visit message will be injected here -->
+        </aside>
+        <section class="discover-cards" id="discover-cards">
+            <!-- Cards will be injected by JS -->
         </section>
     </main>
     <footer>
@@ -103,6 +70,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/discover.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html> 

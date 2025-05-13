@@ -1,0 +1,137 @@
+/* Base styles */
+.discover-main {
+  display: grid;
+  grid-template-areas:
+    "sidebar"
+    "cards";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  font-size: 1.1rem;
+  padding: 0.5rem 0 1rem 0;
+  margin-bottom: 0.5rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #222;
+}
+
+.discover-cards {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 0.2s;
+}
+.card-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.card h2 {
+  font-size: 1.3rem;
+  margin: 0.7rem 1rem 0.2rem 1rem;
+}
+.card figure {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s, filter 0.3s;
+}
+.card address {
+  font-style: normal;
+  color: #555;
+  margin: 0 1rem 0.5rem 1rem;
+  font-size: 1rem;
+}
+.card p {
+  margin: 0 1rem 1rem 1rem;
+  color: #333;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.7rem;
+}
+.card button {
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #005fa3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.card button:hover {
+  background: #003d6b;
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-main {
+    grid-template-areas:
+      "sidebar"
+      "cards";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .sidebar {
+    margin-bottom: 0.5rem;
+    min-width: 0;
+  }
+  .discover-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .discover-main {
+    grid-template-areas:
+      "sidebar"
+      "cards";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .sidebar {
+    min-width: 0;
+  }
+  .discover-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Add new media query for non-mobile screens */
+@media (min-width: 641px) {
+  .card img:hover {
+    transform: scale(1.07) rotate(-1deg);
+    filter: brightness(1.08) saturate(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+    cursor: pointer;
+  }
+} 

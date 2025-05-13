@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Gamla Stan (Old Town)",
+    "address": "Gamla Stan, 111 29 Stockholm, Sweden",
+    "description": "The historic heart of Stockholm, known for its cobblestone streets, colorful buildings, and the Royal Palace.",
+    "image": "gamla-stan.webp"
+  },
+  {
+    "name": "Vasa Museum",
+    "address": "Galärvarvsvägen 14, 115 21 Stockholm, Sweden",
+    "description": "A maritime museum displaying the only almost fully intact 17th-century ship that has ever been salvaged, the 64-gun warship Vasa.",
+    "image": "vasa-museum.webp"
+  },
+  {
+    "name": "Djurgården Park",
+    "address": "Djurgården, 115 21 Stockholm, Sweden",
+    "description": "A lush island park featuring museums, gardens, and the Skansen open-air museum and zoo.",
+    "image": "djurgarden.webp"
+  },
+  {
+    "name": "ABBA The Museum",
+    "address": "Djurgårdsvägen 68, 115 21 Stockholm, Sweden",
+    "description": "An interactive exhibition about the pop group ABBA, their music, and their legacy.",
+    "image": "abba-museum.webp"
+  },
+  {
+    "name": "Stockholm City Hall",
+    "address": "Hantverkargatan 1, 111 52 Stockholm, Sweden",
+    "description": "Famous for its grand ceremonial halls and unique architecture, and the venue of the Nobel Prize banquet.",
+    "image": "city-hall.webp"
+  },
+  {
+    "name": "Fotografiska Museum",
+    "address": "Stadsgårdshamnen 22, 116 45 Stockholm, Sweden",
+    "description": "A contemporary photography museum with rotating exhibitions and a popular café with city views.",
+    "image": "fotografiska.webp"
+  },
+  {
+    "name": "Sergels Torg",
+    "address": "Sergels torg, 111 57 Stockholm, Sweden",
+    "description": "A central public square in Stockholm, known for its modernist glass obelisk and vibrant city life.",
+    "image": "sergels-torg.webp"
+  },
+  {
+    "name": "Skansen Museum",
+    "address": "Djurgårdsslätten 49-51, 115 21 Stockholm, Sweden",
+    "description": "The world's first open-air museum, showcasing Swedish history with historic buildings and a zoo.",
+    "image": "skansen.webp"
+  }
+] 
