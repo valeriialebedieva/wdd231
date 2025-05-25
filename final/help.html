@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Whiskers Shelter | How to Help</title>
+  <meta name="description" content="Learn how you can help our shelter by volunteering, donating, or fostering pets. Contact us to get involved!">
+  <meta name="author" content="Paws & Whiskers Shelter">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="How to Help | Paws & Whiskers Shelter">
+  <meta property="og:description" content="Learn how you can help our shelter by volunteering, donating, or fostering pets. Contact us to get involved!">
+  <meta property="og:image" content="images/og-help.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.org/help.html">
+  <link rel="stylesheet" href="styles/smaller.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/help.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">🐾 Paws & Whiskers Shelter</div>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="available.html">Available Pets</a></li>
+        <li><a href="help.html" class="active">How to Help</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>How You Can Help</h1>
+    <section class="help-options">
+      <article>
+        <h2>Volunteer</h2>
+        <p>Join our team and help care for our pets, assist with events, or support our outreach programs. Volunteers make a huge difference!</p>
+      </article>
+      <article>
+        <h2>Donate</h2>
+        <p>Your donations help us provide food, medical care, and shelter for our animals. Every contribution counts!</p>
+      </article>
+      <article>
+        <h2>Foster</h2>
+        <p>Foster families provide temporary homes for pets in need, helping them adjust and prepare for adoption.</p>
+      </article>
+    </section>
+    <section class="contact-form-section">
+      <h2>Contact Us to Get Involved</h2>
+      <form id="help-form" action="form-action.html" method="get" autocomplete="on">
+        <label for="name">Name:
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </label>
+        <label for="email">Email:
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </label>
+        <label for="interest">How would you like to help?
+          <select id="interest" name="interest" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="donate">Donate</option>
+            <option value="foster">Foster</option>
+          </select>
+        </label>
+        <label for="message">Message:
+          <textarea id="message" name="message" rows="4"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Paws & Whiskers Shelter. All rights reserved.</p>
+      <p>Follow us:
+        <a href="#" aria-label="Facebook">Facebook</a> |
+        <a href="#" aria-label="Instagram">Instagram</a> |
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="scripts/help.js"></script>
+</body>
+</html> 

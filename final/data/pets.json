@@ -1,0 +1,17 @@
+[
+  {"id":1,"name":"Bella","species":"Dog","age":3,"gender":"Female","breed":"Labrador Retriever","color":"Yellow","image":"pet1.webp","description":"Friendly and energetic, loves to play fetch and go for walks."},
+  {"id":2,"name":"Max","species":"Dog","age":5,"gender":"Male","breed":"German Shepherd","color":"Black/Tan","image":"pet2.webp","description":"Loyal and protective, great with families and children."},
+  {"id":3,"name":"Luna","species":"Cat","age":2,"gender":"Female","breed":"Siamese","color":"Cream/Gray","image":"pet3.webp","description":"Affectionate lap cat, enjoys sunbathing and cuddles."},
+  {"id":4,"name":"Charlie","species":"Dog","age":4,"gender":"Male","breed":"Beagle","color":"Tri-color","image":"pet4.webp","description":"Curious and playful, loves to sniff and explore new places."},
+  {"id":5,"name":"Lucy","species":"Cat","age":1,"gender":"Female","breed":"Maine Coon","color":"Brown Tabby","image":"pet5.webp","description":"Gentle giant, very fluffy and loves to be brushed."},
+  {"id":6,"name":"Rocky","species":"Dog","age":6,"gender":"Male","breed":"Boxer","color":"Brindle","image":"pet6.webp","description":"Energetic and goofy, enjoys running and playing with toys."},
+  {"id":7,"name":"Milo","species":"Cat","age":3,"gender":"Male","breed":"British Shorthair","color":"Blue","image":"pet7.webp","description":"Calm and independent, perfect for a quiet home."},
+  {"id":8,"name":"Daisy","species":"Dog","age":2,"gender":"Female","breed":"Poodle","color":"White","image":"pet8.webp","description":"Smart and trainable, loves learning new tricks."},
+  {"id":9,"name":"Simba","species":"Cat","age":4,"gender":"Male","breed":"Bengal","color":"Spotted","image":"pet9.webp","description":"Active and curious, enjoys climbing and playing."},
+  {"id":10,"name":"Sadie","species":"Dog","age":7,"gender":"Female","breed":"Golden Retriever","color":"Golden","image":"pet10.webp","description":"Gentle and loving, great with kids and other pets."},
+  {"id":11,"name":"Nala","species":"Cat","age":2,"gender":"Female","breed":"Ragdoll","color":"Seal Point","image":"pet11.webp","description":"Sweet and docile, loves to be held and purrs a lot."},
+  {"id":12,"name":"Cooper","species":"Dog","age":5,"gender":"Male","breed":"Bulldog","color":"White/Brown","image":"pet12.webp","description":"Laid-back and friendly, enjoys lounging and belly rubs."},
+  {"id":13,"name":"Zoe","species":"Cat","age":3,"gender":"Female","breed":"Persian","color":"White","image":"pet13.webp","description":"Elegant and quiet, prefers calm environments."},
+  {"id":14,"name":"Buddy","species":"Dog","age":2,"gender":"Male","breed":"Corgi","color":"Red/White","image":"pet14.webp","description":"Playful and affectionate, loves to herd and chase balls."},
+  {"id":15,"name":"Mittens","species":"Cat","age":4,"gender":"Female","breed":"Tabby","color":"Gray","image":"pet15.webp","description":"Curious and friendly, enjoys window watching and treats."}
+] 

@@ -1,0 +1,57 @@
+.help-options {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.help-options article {
+  flex: 1 1 200px;
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.05);
+  margin-bottom: 1rem;
+}
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1.2rem;
+}
+.contact-form-section label {
+  font-weight: 600;
+  color: #1A237E;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 0.2rem;
+}
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section select {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-top: 0.2rem;
+  background: #fff;
+}
+.contact-form-section button {
+  background: #1A237E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+.contact-form-section button:hover {
+  background: #FF7043;
+}
+@media (max-width: 640px) {
+  .help-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

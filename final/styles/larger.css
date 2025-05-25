@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #F5F5F5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #1A237E 60%, #FF7043 100%);
+  color: #fff;
+  padding: 1.5rem 0 1rem 0;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.10);
+}
+main h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+.logo {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+.logo span {
+  color: #FF7043 !important;
+  vertical-align: middle;
+}
+.logo .paw-logo {
+  filter: drop-shadow(0 2px 4px rgba(255,112,67,0.3));
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background: rgba(26,35,126,0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.10);
+  margin-top: 0.5rem;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  position: static;
+  background: none;
+  width: auto;
+  box-shadow: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF7043 0%, #FFD180 100%);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+.nav-links a:hover::after, .nav-links a.active::after {
+  width: 100%;
+}
+.nav-links a.active, .nav-links a:focus, .nav-links a:hover {
+  background: #FF7043;
+  color: #fff;
+}
+.nav-links a:focus-visible {
+  outline: 2px solid #FF7043;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #FFD18055;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 2rem auto 1.5rem auto;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px) saturate(1.2);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.10);
+  overflow: hidden;
+  opacity: 0;
+  animation: fade-in 0.8s ease forwards;
+  animation-delay: 0.05s;
+}
+.hero img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.10);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.hero img:hover {
+  box-shadow: 0 16px 48px rgba(26,35,126,0.18);
+  transform: scale(1.04) rotate(-1deg);
+}
+.hero-text {
+  flex: 1;
+  padding: 2.5rem 2rem;
+}
+.hero-text h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  color: #1A237E;
+}
+.hero-text p {
+  font-size: 1.3rem;
+  color: #333;
+}
+.mission, .contact, .help-options, .contact-form-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(4px) saturate(1.1);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.08);
+  padding: 2rem 2.5rem;
+  opacity: 0;
+  animation: fade-in 0.8s ease forwards;
+}
+section:nth-of-type(1) { animation-delay: 0.1s; }
+section:nth-of-type(2) { animation-delay: 0.2s; }
+section:nth-of-type(3) { animation-delay: 0.3s; }
+.mission h2, .contact h2, .help-options h2, .contact-form-section h2 {
+  color: #1A237E;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-top: 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.pet-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(2px) saturate(1.1);
+  box-shadow: 0 2px 8px rgba(26,35,126,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.3s;
+  opacity: 0;
+  animation: fade-in 0.8s ease forwards;
+}
+.pet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  background: #eee;
+}
+.pet-card .pet-info {
+  flex: 1 1 auto;
+  padding: 1rem 1.2rem 0.5rem 1.2rem;
+}
+.pet-card h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #1A237E;
+}
+.pet-card .pet-meta {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+.pet-card .pet-desc {
+  font-size: 0.98rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.5rem;
+}
+.pet-card button {
+  margin: 0 1.2rem 1.2rem 1.2rem;
+  padding: 0.5rem 1.2rem;
+  background: #1A237E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.2s;
+}
+.pet-card button:hover {
+  background: #FF7043;
+}
+.pet-card:hover {
+  box-shadow: 0 12px 36px rgba(255,112,67,0.18), 0 2px 8px rgba(26,35,126,0.07);
+  transform: translateY(-8px) scale(1.035);
+  background: rgba(255,255,255,0.98);
+  z-index: 2;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(26,35,126,0.25);
+  align-items: center;
+  justify-content: center;
+}
+.modal[aria-hidden="false"] {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 95vw;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.15);
+  position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1A237E;
+  cursor: pointer;
+}
+footer {
+  background: #1A237E;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
+}
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+} 
