@@ -1,6 +1,6 @@
 [
-  {"id":1,"name":"Bella","species":"Dog","age":3,"gender":"Female","breed":"Labrador Retriever","color":"Yellow","image":"pet1.webp","description":"Friendly and energetic, loves to play fetch and go for walks."},
-  {"id":2,"name":"Max","species":"Dog","age":5,"gender":"Male","breed":"German Shepherd","color":"Black/Tan","image":"pet2.webp","description":"Loyal and protective, great with families and children."},
+  {"id":1,"name":"Bella","species":"Dog","age":3,"gender":"Female","breed":"Labrador Retriever","color":"Yellow","image":"1.jpeg","description":"Friendly and energetic, loves to play fetch and go for walks."},
+  {"id":2,"name":"Max","species":"Dog","age":5,"gender":"Male","breed":"German Shepherd","color":"Black/Tan","image":"2.jpeg","description":"Loyal and protective, great with families and children."},
   {"id":3,"name":"Luna","species":"Cat","age":2,"gender":"Female","breed":"Siamese","color":"Cream/Gray","image":"pet3.webp","description":"Affectionate lap cat, enjoys sunbathing and cuddles."},
   {"id":4,"name":"Charlie","species":"Dog","age":4,"gender":"Male","breed":"Beagle","color":"Tri-color","image":"pet4.webp","description":"Curious and playful, loves to sniff and explore new places."},
   {"id":5,"name":"Lucy","species":"Cat","age":1,"gender":"Female","breed":"Maine Coon","color":"Brown Tabby","image":"pet5.webp","description":"Gentle giant, very fluffy and loves to be brushed."},
