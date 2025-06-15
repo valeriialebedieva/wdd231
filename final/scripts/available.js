@@ -1,5 +1,6 @@
 import { openModal, closeModal, setupModal } from './modal.js';
 import { getLS, setLS } from './storage.js';
+import './nav.js';
 
 const gallery = document.getElementById('pet-gallery');
 const modal = document.getElementById('pet-modal');

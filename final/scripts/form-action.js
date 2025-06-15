@@ -1,3 +1,5 @@
+import './nav.js';
+
 document.getElementById('year').textContent = new Date().getFullYear();
     const params = new URLSearchParams(window.location.search);
     const dataDiv = document.getElementById('form-data');

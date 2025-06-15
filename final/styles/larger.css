@@ -282,7 +282,7 @@ footer {
   text-align: center;
   font-size: 1rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 641px) {
   .gallery {
     grid-template-columns: repeat(5, 1fr);
   }

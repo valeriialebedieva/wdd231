@@ -1,3 +1,5 @@
+import './nav.js';
+
 const form = document.getElementById('help-form');
 const LS_KEY = 'helpFormData';
 
